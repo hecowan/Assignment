@@ -1,0 +1,119 @@
+/* This block creates the repeating image of ats on the webpage */
+html {
+  background-image: url("../images/bats.gif");
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* the width of the body was set to 800px with a auto margin to always be in
+the middle top when a window is larger then 800px. The body was given a white
+backrgound and a solid black border with a shadow all around the body */
+body{
+      font-family: Arial, Helvetica, sans-serif;
+      width: 800px;
+      background-color: white;
+      border: solid black;
+      margin: auto;
+      box-shadow: 5px 5px 100px;
+}
+
+/* this block sets the padding for the main section so enhance visual style
+The width and height are set to contain two columns at set sizes */
+main {
+  width: 750px;
+  height: 420px;
+  padding: 20px 25px 25px 25px;
+}
+
+/* a 45 degree gradient was given to the header from white to organe to black */
+header{
+  background-image: linear-gradient(45deg, white , orange, black);
+  border-bottom: solid black;
+  padding: 15px;
+}
+
+/*The image is floated to the left so that the text may be beside it*/
+header>img{
+  float:left;
+  padding-right: 15px;
+}
+
+/*This group had the color, shadow and italics removed*/
+header>h2{
+  font-size: 230%;
+}
+
+/*This group adjust the size of the product categories title*/
+h2{
+  font-size: 120%;
+}
+
+/*This group is to change the size of the smaller titles for a better layout*/
+h3{
+  font-size: 125%;
+}
+
+/* this block is to create space between a heading and a link */
+#B>h3{
+  padding-top: 10px;
+}
+
+/*This rule is used to create the large 'W'*/
+h1::first-letter{
+  font-size: 250%;
+}
+
+h1{
+  font-size: 125%;
+}
+
+p{
+  font-size: 90%;
+}
+
+/* A contains the left column and is set to have a size of 160px width*/
+#A{
+  width: 160px;
+  float: left;
+}
+
+/* B contains the right column and is set to have a size of 590px to contain the
+main body is another column */
+#B{
+  float: right;
+  width: 590px;
+}
+
+/*The assignment asked for the links to be bold and orange even when the links
+have been clicked so I left out the use of link and visited to override the color
+change*/
+a{
+  font-weight: bolder;
+  color: orange;
+}
+
+/*The links needed to change to green when the mouse was over them or when the
+user tabbed to the link thus the use of hover and focus*/
+a:hover, a:focus{
+  color: green;
+}
+
+/*To create space between the list items I used padding with pt to avoid problems
+with pixel variations*/
+li{
+  padding-top: 2pt;
+  padding-bottom: 2pt;
+}
+
+/*The footer was altered to have a top border and a 45 degree gradiant going
+black, orange then white*/
+footer{
+  font-size: 80%;
+  text-align: center;
+  border-top: solid black;
+  background-image: linear-gradient(45deg, black , orange, white);
+  padding: 10px;
+}
